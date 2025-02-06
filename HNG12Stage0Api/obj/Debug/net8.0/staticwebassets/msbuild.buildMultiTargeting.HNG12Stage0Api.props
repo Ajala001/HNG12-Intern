@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\HNG12Stage0Api.props" />
+</Project>

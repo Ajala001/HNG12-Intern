@@ -1,0 +1,12 @@
+[
+  {
+    "ContainingType": "HNG12Stage0Api.Controllers.PublicInfoController",
+    "Method": "GetPublicInfo",
+    "RelativePath": "",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  }
+]
