@@ -1,5 +1,3 @@
-# HNG12-Intern
-An Internship Program at HNG- HNG12Stage0Api
 
 # HNG12 Stage 0 API Task
 This repository contains a simple public API developed as part of the HNG12 internship Stage 0 backend task. The API returns basic information such as the registered email address, the current datetime in ISO 8601 format, and the GitHub URL of the project.
