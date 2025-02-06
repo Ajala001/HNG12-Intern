@@ -1,22 +1,29 @@
-# Use the official .NET SDK image as the build environment
-FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build-env
+# Use the .NET SDK image for build
+FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
+
+# Set the working directory in the container
 WORKDIR /app
 
-# Copy csproj and restore as distinct layers
-COPY *.csproj ./
+# Copy the project files to the container
+COPY *.sln ./
+COPY HNG12Stage0Api/*.csproj ./HNG12Stage0Api/
+
+# Restore dependencies
 RUN dotnet restore
 
-# Copy everything else and build
-COPY . ./
+# Copy the rest of the application files
+COPY . .
+
+# Build the application
 RUN dotnet publish -c Release -o out
 
-# Use the runtime-only image for running the application
-FROM mcr.microsoft.com/dotnet/aspnet:8.0
+# Use a smaller runtime image for running the app
+FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS runtime
 WORKDIR /app
-COPY --from=build-env /app/out .
+COPY --from=build /app/out .
 
-# Expose the port your application listens on
-EXPOSE 80
+# Expose the port your application runs on
+EXPOSE 5000
 
-# Entry point for the application
+# Set the entry point for the application
 ENTRYPOINT ["dotnet", "HNG12Stage0Api.dll"]
