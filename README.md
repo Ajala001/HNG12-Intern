@@ -35,7 +35,7 @@ dotnet restore(Visual Studio Code).
 # Run the application:
 dotnet run(Visual Studio Code).
 
-Access the API by visiting http://localhost:<port>/api/info in your browser or API client (e.g., Postman).
+Access the API by visiting https://localhost:7012/api/info in your browser or API client (e.g., Postman).
 
 # API Documentation
 Endpoint
