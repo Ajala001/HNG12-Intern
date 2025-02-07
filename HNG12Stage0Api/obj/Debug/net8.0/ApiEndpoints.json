@@ -2,7 +2,7 @@
   {
     "ContainingType": "HNG12Stage0Api.Controllers.PublicInfoController",
     "Method": "GetPublicInfo",
-    "RelativePath": "",
+    "RelativePath": "api/info",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
