@@ -52,6 +52,9 @@ Response Format
 # Response Code
 200 Ok
 
+# Deployment Endpoint
+https://hng12stage0api.onrender.com/api/info
+
 License
 This project is open-source and available under the MIT License.
 
