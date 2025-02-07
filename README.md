@@ -14,9 +14,8 @@ Return the following details in JSON format:
 # Technologies Used
 Programming Language: C#
 Framework: ASP.NET Core Web API
-
-# Deployment: Hosted on a publicly accessible endpoint
-# Version Control: Git and GitHub
+Deployment: Hosted on a publicly accessible endpoint
+Version Control: Git and GitHub
 
 # How to Run the Project Locally
 # Prerequisites
@@ -45,14 +44,13 @@ GET /api/info
 Response Format
 
 {
-  "email": "your-email@example.com",
+  "email": "ajala.ba2014@gmail.com",
   "current_datetime": "2025-01-30T09:30:00Z",
   "github_url": https://github.com/Ajala001/HNG12-Intern.git
 }
 
-Example Usage
-Using curl:
-curl -X GET http://localhost:<port>/api/info
+# Response Code
+200 Ok
 
 Deployed Endpoint
 You can access the deployed API at:
