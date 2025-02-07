@@ -52,9 +52,6 @@ Response Format
 # Response Code
 200 Ok
 
-Deployed Endpoint
-You can access the deployed API at:
-
 License
 This project is open-source and available under the MIT License.
 
